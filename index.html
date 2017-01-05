@@ -343,6 +343,10 @@ tw-link, tw-enchantment.link {
 
 
 
+
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 $("body").append('<div id="navbar"><input type="button"  id="zephyo" value="&nbsp;&nbsp;Stink Bug Plague by zephyo&nbsp;" class="yum" /><input type="button"  id="Restart" value="&nbsp;Restart&nbsp;" class="yum" style="float: right;" /><input type="button"  id="Save" value="&nbsp;Save&nbsp;" class="yum" style="float: right;" /></div>');
 
@@ -369,12 +373,16 @@ document.getElementById("zephyo").onclick = function(){
 
 
 
+
+
+
+
 </script><tw-passagedata pid="1" name="Start" tags="Start" position="702,429">=&gt;&lt;=
 &lt;img src=&quot;https://dl.dropboxusercontent.com/s/iqonf3f6od4jsdx/stink2.jpg&quot;&gt;
 &lt;=
 You’ve stepped on a stink bug. Bits of crunched exoskeleton and viscous goo stick to your bare feet. You get a whiff of good ‘ol stink bug odor.
 
-[[Ew. What the fuck? Stop thinking about it!-&gt;Ew]]
+[[Ew! Stop thinking about it!-&gt;Ew]]
 [[This is so sad.. The poor creature probably has a family somewhere.-&gt;Sad]]
 [[Meh. Another mundane occurrence in my tepid existence.-&gt;Mundane]]
 
@@ -398,10 +406,10 @@ You’ve stepped on a stink bug. Bits of crunched exoskeleton and viscous goo st
 
 [[Go to the kitchen.-&gt;Kitchen]]
 [[Your appetite is ruined. Meander about aimlessly.-&gt;Meander]](set: $bravery to it+1)</tw-passagedata>
-<tw-passagedata pid="5" name="Ew" tags="" position="740,690">(set:$like to it-1)Your thoughts, so poetically prosed, grind to a halt. Stink bugs are disgusting. Fuck prose.
+<tw-passagedata pid="5" name="Ew" tags="" position="740,690">(set:$like to it-1)Your thoughts, so poetically prosed, grind to a halt. Stink bugs are disgusting. No more prose.
 
 [[She sells seashells by the sea shore.-&gt;Seashells]]
-[[Clean up your foot and that nasty motherfucker.-&gt;Cleanfoot]]
+[[Clean up your foot and the stink bug remains.-&gt;Cleanfoot]]
 [[Poke at the departed bug with the nearest object.-&gt;Poke]]
 [[Hop on one foot - your clean foot - and scream.-&gt;Scream]]</tw-passagedata>
 <tw-passagedata pid="6" name="Poke" tags="" position="738,840">You poke at it with a pen. The stink bug twitches.
@@ -447,7 +455,7 @@ You’ve stepped on a stink bug. Bits of crunched exoskeleton and viscous goo st
 <tw-passagedata pid="12" name="Reality" tags="" position="804,565">	What should you do?
 	
 [[She sells seashells by the sea shore.-&gt;Seashells]]
-[[Clean up your foot and that nasty motherfucker.-&gt;Cleanfoot]]
+[[Clean up your foot and the stink bug remains.-&gt;Cleanfoot]]
 [[Poke at the departed bug with the nearest object.-&gt;Poke]]
 [[Hop on one foot - your clean foot - and scream.-&gt;Scream]]</tw-passagedata>
 <tw-passagedata pid="13" name="Burst" tags="" position="968,1012">	You burst into tears for hours upon hours. Fat droplets endlessly roll down your face. Your red nose and mouth are covered in an indistinguishable mass of disgusting snotty goop. 
@@ -480,8 +488,8 @@ You’ve stepped on a stink bug. Bits of crunched exoskeleton and viscous goo st
 * are (if: $mental &lt;= 0)[perfectly sane](else-if:$mental is 1)[a bit mental](else-if:$mental is 2)[mental](else-if: $mental is 3)[(text-style:&quot;shudder&quot;)[crazy]](else-if: $mental &gt;= 4)[(text-style:&quot;fade-in-out&quot;)[absolutely insane!]]
   }{(if: $dreamer is 1)[* infrequently daydream](else-if:$dreamer is 2)[* are a tentative daydreamer](else-if: $dreamer is 3)[* are an experienced daydreamer](else-if: $dreamer is 4)[* can daydream anywhere, anytime (∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ](else-if: $dreamer &gt;= 5)[* can probably actualize unicorns given your daydreaming experience (⊃｡•́‿•̀｡)⊃━☆ﾟ.*･｡ﾟ]
 (if: $robin is true or $history is &quot;PowerOff1&quot; or it is &quot;Sleep1&quot; or it is &quot;Sleep2&quot;)[* are adroit with money]
-(if: $nofucks is 1)[* occasionally give fucks about life](else-if:$nofucks is 2)[* infrequently give fucks about life](else-if: $nofucks is 3)[* gave approximately 1 fuck about life](else-if: $nofucks &gt;= 4)[* gave &#39;&#39;zero fucks&#39;&#39; in life~~^^what the fuck is wrong with you^^~~]
-(if: $scholar is not false)[* are a boss ass scholar who knows how to wade through academic databases]
+(if: $nofucks is 1)[* put some thought into life decisions](else-if:$nofucks is 2)[* infrequently put thought into life decisions](else-if: $nofucks is 3)[* do not care much about life decisions](else-if: $nofucks &gt;= 4)[* do not care &#39;&#39;at all&#39;&#39; about life decisions]
+(if: $scholar is not false)[* are an excellent scholar who knows how to wade through academic databases]
 (if: $curious is 0)[* are not curious //at all//](else-if:$curious is 1)[* had probably 1 mg of curiosity in you](else-if:$curious is 2)[* had probably 5 mg of curiosity in you](else-if: $curious is 3)[* are //kind of// curious, but not really](else-if: $curious is 4)[* are somewhat curious to learn!](else-if: $curious is 5)[* are often times curious to learn!](else-if: $curious is 6)[* are a curious, ^^(probably)^^ intrinsically motivated person!](else-if: $curious is 7)[* are a very eager to learn! ^^(From the author: good for you!)^^](else-if: $curious &gt; 7)[* have reached an ultimate thirst to learn (•́⌄•́๑)૭✧]
 (if: $internet is not false)[* are internet famousヽ( ▼∀▼)ﾉ]
 
@@ -514,7 +522,7 @@ Check your notes.-&gt;Notes]]]
 [[Drift aimlessly some more.-&gt;Lost]]
 [[Go back to the kitchen.-&gt;Kitchen]](set:$like to it-1)
 </tw-passagedata>
-<tw-passagedata pid="18" name="Lost" tags="" position="1265,961">	You’re lost. For fuck’s sake; you’re lost in your own house.
+<tw-passagedata pid="18" name="Lost" tags="" position="1265,961">	You’re lost. Goodness! You’re lost in your own house.
 	
 [[This is ridiculous. Cease to exist.-&gt;Seppuku]]
 [[Look about wildly.-&gt;Nothing]]
@@ -565,7 +573,7 @@ You remember something from your research: in winter, stink bugs hide and go int
 
 [[Your gaze drifts to the rest of the kitchen.-&gt;Kitchen]]
 </tw-passagedata>
-<tw-passagedata pid="27" name="WhatMoved" tags="" position="1395,712">You peer to no avail. Damn nearsightedness. Can’t see a damn thing. 
+<tw-passagedata pid="27" name="WhatMoved" tags="" position="1395,712">You peer to no avail. Dang nearsightedness. Can’t see a dang thing. 
 [[You don’t have glasses, but put on glasses anyways.-&gt;GlassesMotion]]
 [[Move closer.-&gt;MoveCloser]]</tw-passagedata>
 <tw-passagedata pid="28" name="InternetSearch" tags="" position="1631,699">(set:$solve to it+1)You whip out your handy-dandy laptop. What should you search?
@@ -758,7 +766,7 @@ Hmm. Stink bug predators need help, do they?
 [[What does “3 Ways to Get Rid of Stink Bugs Naturally” //mean//? Is there a way to get rid of stink bugs //unnaturally//?-&gt;PhilosophicalStupor]]](if:$threeways is not true or $washp is not true or $lifestyle is not true)[
 [[Click on a random link.-&gt;ThreeWays]]](if:$econ is not true or $pheromone is not true)[
 [[Those sites seem like they have little credibility. Limit your search to sites with .gov or .edu domains.-&gt;Scholar1]]](if:$frequency is not true or $controlprog is not true)[
-[[Be a hardcore motherfucker and limit your search to scholarly literature.-&gt;Scholar2]]]
+[[Be a hardcore researcher and limit your search to scholarly literature.-&gt;Scholar2]]]
 [[Check your notes.-&gt;Notes]]
 [[Stop searching.-&gt;Tired]]
 </tw-passagedata>
@@ -827,7 +835,7 @@ Your phone&#39;s ringing.
 
 [[Take the call.-&gt;Phone]]
 [[Reject it.-&gt;WUT]]]</tw-passagedata>
-<tw-passagedata pid="56" name="Tired" tags="" position="1485,241">Damn son, you are //beat//! You deserve a break.
+<tw-passagedata pid="56" name="Tired" tags="" position="1485,241">You are //tired//! You deserve a break.
 ^^A nice, devoid-of-food break.. your eye twitches towards the fridge.^^
 (live: 1s)[(display:&quot;Kitchen&quot;)](stop:)</tw-passagedata>
 <tw-passagedata pid="57" name="News" tags="" position="2043,863">&lt;div class=&quot;dia&quot;&gt;
@@ -1332,7 +1340,7 @@ You narrow your search to articles from 2012 to present. Eureka!(set:$scholar to
 &lt;==&gt;
 &quot;A &#39;&#39;parasitoid&#39;&#39; is an organism that spends a significant portion of its life history attached to or within a single host organism in a parasitic relationship; unlike a true parasite, however, it ultimately sterilises or kills and sometimes eats the host.&quot;
 
-Damn. Imagine if humans did that.
+Imagine if humans did that.
 
 &quot;Thanks for hosting me; oh yeah, by the way - I&#39;m going to eat you alive soon. K bye!&quot;
 =&gt;&lt;=
@@ -1425,6 +1433,8 @@ There are several shelves. There’s nothing to eat, obviously. What did you exp
 
 Your stomach grumbles. You feel like a dog, obsessed with the door, hoping to see their owner despite knowing they won’t be back until 5. Ugh.
 
+Something glassy gleams in the corner.
+
 [[Examine again!-&gt;Examine2]]
 [[Examine the darkened half. -&gt;Darkened]] 
 [[This is useless! Close the fridge. -&gt;Kitchen]] 
@@ -1474,7 +1484,7 @@ Which ones should you choose to build your insect?
 
 [[Examine the darkened half. -&gt;Darkened]] 
 [[Close the fridge. -&gt;Kitchen]] </tw-passagedata>
-<tw-passagedata pid="123" name="Dark1" tags="" position="2597,1654">(set:$solve to it+1, $fridge3 to true)Ew.. you see something. Many things, actually. At least 10 stink bugs are trying to head out of the fridge, intolerant of the cold. You don’t even want to think about how they got there in the first place.
+<tw-passagedata pid="123" name="Dark1" tags="" position="2604,1694">(set:$solve to it+1, $fridge3 to true)Ew.. you see something. Many things, actually. At least 10 stink bugs are trying to head out of the fridge, intolerant of the cold. You don’t even want to think about how they got there in the first place.
 
 [[Be benevolent. Keep the door open and let the stink bugs come out. -&gt;Benevolence]]
 [[Quickly shut the door. -&gt;Whew2]] 
@@ -1483,7 +1493,7 @@ Which ones should you choose to build your insect?
 
 (live:1s)[(display:&quot;Kitchen&quot;)](stop:)
 </tw-passagedata>
-<tw-passagedata pid="125" name="Benevolence" tags="" position="2596,1788">They sluggishly crawl out, not even thanking you for your generosity. How rude. (if:$solve&lt;2)[You feel multiple tingling sensations along your arm and look down - what the fuck! At least 3 have gotten on your arm!(set:$like to it+1, $bravery to it+1)
+<tw-passagedata pid="125" name="Benevolence" tags="" position="2612,1859">They sluggishly crawl out, not even thanking you for your generosity. How rude. (if:$solve&lt;2)[You feel multiple tingling sensations along your arm and look down - what the..! At least 3 have gotten on your arm!(set:$like to it+1, $bravery to it+1)
 
 [[Die from horror.-&gt;Horror]]
 [[Stand still in shock.-&gt;Shock]]
@@ -1492,9 +1502,21 @@ Which ones should you choose to build your insect?
 
 [[Close the fridge.-&gt;Kitchen]]
 ]</tw-passagedata>
-<tw-passagedata pid="126" name="Whew2" tags="" position="2412,1615">Whew. Keep them there to die; that’ll show those creepy buggers.
+<tw-passagedata pid="126" name="Whew2" tags="" position="2412,1615">(transition:&quot;shudder&quot;)[####SLAM!] 
+Keep them there to die; that’ll show those creepy buggers.
 
-(live:1s)[(display:&quot;BLOCK&quot;)](stop:)
+(if:$solve&lt;2)[
+You hear a strange buzzing noise.. - something brown blurs near you - 
+
+Shit! A stink bug managed to get out and it&#39;s now landed on your face! 
+
+[[Die from horror.-&gt;Horror]]
+[[Stand still in shock.-&gt;Shock]]
+[[Stand still in apathy.-&gt;Apathy]]
+[[Flail in desperation.-&gt;RunAway]]](else:)[(live:1s)[(display:&quot;BLOCK&quot;)](stop:)
+]
+
+
 </tw-passagedata>
 <tw-passagedata pid="127" name="Mouthparts" tags="" position="2267,1214">You take a..
 (link:&quot;Chewing mouthpart&quot;)[(set:$mouthpart to &quot;chewing mouthpart&quot;)(go-to: &quot;mouthpart2&quot;)]
@@ -1805,7 +1827,7 @@ When the stink bugs finally leave, your $body is irrefutably dead.
 
 [[Check your notes. -&gt;Notes]] </tw-passagedata>
 <tw-passagedata pid="162" name="FoodChosen" tags="" position="3564,1381">&lt;==&gt;
-&lt;p&gt;You’re real pissed that you have to go to the grocery to get $food. Trudging and mumbling, you walk to the grocer’s. People stare at your unicorn pajamas. Yeah, the grocer’s is 5 minutes away, but still, less exercise is the best exercise.
+&lt;p&gt;You’re really annoyed that you have to go to the grocery to get $food. Trudging and mumbling, you walk to the grocer’s. People stare at your unicorn pajamas. Yeah, the grocer’s is 5 minutes away, but still, less exercise is the best exercise.
 &lt;p&gt;	Your creation buzzes in your ear sympathetically, sensing your distress.
 	&lt;p&gt;	You grab some twinkies on your way out: you&#39;ve heard they&#39;ve [[become an endangered species-&gt;INFOTwinkies]].
 	
@@ -1894,8 +1916,6 @@ etc. Will this quell all doubt? //No,// of course not!
 #Stink Bug Plague
 ####by [[zephyo-&gt;INFOzephyo]]
 &lt;img src=&quot;https://dl.dropboxusercontent.com/s/6l5wqebvv92grbq/stink1.jpg&quot;&gt;
-^^*Contains swear words.^^
-
 [[&#39;&#39;START&#39;&#39;-&gt;Start]] 
 
 </tw-passagedata>
