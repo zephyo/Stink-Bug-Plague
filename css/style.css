@@ -169,11 +169,13 @@ text-transform: uppercase;}
 .form-group {
 	margin: 20px 0;
 }
-
+a{
+	color: #FFFFFF;
+}
 /* Sigma BG Colors --- BEGIN */
 
 .sigma-bg-lightgray {
-	color: #FFFFFF;
+
 	background-color: #E4E8E8;
 }
 
