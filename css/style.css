@@ -173,6 +173,7 @@ text-transform: uppercase;}
 /* Sigma BG Colors --- BEGIN */
 
 .sigma-bg-lightgray {
+	color: #FFFFFF;
 	background-color: #E4E8E8;
 }
 
