@@ -9,7 +9,9 @@ body {
 b{
 line-weight:900;
 }
-
+#gallery{
+opacity:0;
+}
 h1 {
 	  font-family: 'Nunito', sans-serif;
 	font-size: 34px;
